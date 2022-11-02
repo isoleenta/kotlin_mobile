@@ -51,7 +51,8 @@ class Student {
      * @return string with info about student
      */
     override fun toString(): String {
-        return "Student parameters: name='$name', surname='$surname', phoneNumber='$phoneNumber', studentBilletNumber='$studentBilletNumber', university=$university, birthday=$birthday)"
+        return "Student parameters: name='$name', surname='$surname', phoneNumber='$phoneNumber', \n" +
+                "studentBilletNumber='$studentBilletNumber', university=$university, birthday=$birthday)"
     }
 }
 
@@ -93,5 +94,6 @@ fun main() {
     )
 
     println(student)
+    println()
     student.showStudentBriefInfo()
 }

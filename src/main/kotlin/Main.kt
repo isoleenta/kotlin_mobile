@@ -2,6 +2,6 @@ import kotlin.math.pow
 import kotlin.math.sqrt
 
 fun main(args: Array<String>) {
-    Lab6()
+    Lab7()
 }
 

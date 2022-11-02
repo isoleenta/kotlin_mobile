@@ -17,7 +17,13 @@ class Lab12 {
         println("Є малою латинською літерою?: "+ regex_lower_case_character.matches(string))
 
         val regex_word_character = """[a-zA-Z]{1}""".toRegex()
-        println("Є латинською літерою (великою чи малою)?: "+ regex_word_character.matches(string))
+        print("Є латинською літерою (великою чи малою)?: ${regex_word_character.matches(string)} ")
+        if(regex_word_character.matches(string)){
+            if(regex_lower_case_character.matches(string))
+                println("Є малою латинською літерою")
+            else
+                println("Є великою латинською літерою")
+        }
     }
 
     fun secondAndThirdExercises() {
@@ -25,6 +31,7 @@ class Lab12 {
         val weekDay = readln().toInt()
         println("Your choose: " + Weekd.find(weekDay))
         println("Next day is: " + Weekd.find(weekDay)?.nextDay())
+        println()
     }
 
     fun fourthExercise(){
